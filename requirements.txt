@@ -1,0 +1,3 @@
+# Core runtime — the pipeline only needs an HTTP client and a .env loader.
+requests>=2.31
+python-dotenv>=1.0

@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.key
+
+# IDE / editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Claude Code state
+.claude/
+.claude-tmp/
+.tmp/
+
+# Run artifacts (pipeline output)
+logs/
+performance_data/
+*.log
+*.out
+
+# Local archives (never commit)
+qubrio_anon.zip
+*.zip
+
+# Build artifacts (latex source ships separately if needed)
+latex/
+
+# Ablation pipelines (kept locally; not part of public release)
+ablation/
+single_agent/
