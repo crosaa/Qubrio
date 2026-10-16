@@ -14,19 +14,6 @@ pip install -r requirements.txt
 cp .env.example .env   # fill in the API key for the backbone you use
 ```
 
-Pick a backbone via `--provider` and set the matching key:
-
-| `--provider` | Backbone | Env variable |
-|---|---|---|
-| `deepseek` | DeepSeek-V3.2 | `DEEPSEEK_API_KEY` |
-| `openai` | GPT-5.4 | `OPENAI_API_KEY` |
-| `qwen` | Qwen-3.5 (via OpenRouter, Alibaba first-party) | `OPENROUTER_API_KEY` |
-
-The paper's DeepSeek results were produced with DeepSeek-V3.2 through the
-`deepseek-reasoner` model name. DeepSeek has since retired V3.2: that name is
-now served by DeepSeek-V4.1-Flash, so a re-run today uses that model. Pass
-`--model deepseek-v4-pro` to use DeepSeek-V4-Pro instead.
-
 ## Benchmarks
 
 `benchmark/` ships the eight QASMBench-derived circuits used: QFT-18, QFT-63, QAOA-20, QAOA-60, GHZ-23, GHZ-78, Ising-26,
